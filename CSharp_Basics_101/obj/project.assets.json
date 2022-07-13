@@ -1,11 +1,60 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Humanizer.Core/2.14.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Humanizer.dll": {}
+        }
+      },
+      "BankyStuffLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Humanizer.Core": "2.14.1"
+        },
+        "compile": {
+          "bin/placeholder/BankyStuffLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankyStuffLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Humanizer.Core/2.14.1": {
+      "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
+      "type": "package",
+      "path": "humanizer.core/2.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.2.14.1.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/net6.0/Humanizer.dll",
+        "lib/net6.0/Humanizer.xml",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
+      ]
+    },
+    "BankyStuffLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BankyStuffLibrary/BankyStuffLibrary.csproj",
+      "msbuildProject": "../BankyStuffLibrary/BankyStuffLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "BankyStuffLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Afonso Pinto\\.nuget\\packages\\": {},
@@ -15,11 +64,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharp_Basics_101\\CSharp_Basics_101\\CSharp_Basics_101.csproj",
+      "projectUniqueName": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharpBasics101\\CSharp_Basics_101\\CSharp_Basics_101.csproj",
       "projectName": "CSharp_Basics_101",
-      "projectPath": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharp_Basics_101\\CSharp_Basics_101\\CSharp_Basics_101.csproj",
+      "projectPath": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharpBasics101\\CSharp_Basics_101\\CSharp_Basics_101.csproj",
       "packagesPath": "C:\\Users\\Afonso Pinto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharp_Basics_101\\CSharp_Basics_101\\obj\\",
+      "outputPath": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharpBasics101\\CSharp_Basics_101\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -40,7 +89,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharpBasics101\\BankyStuffLibrary\\BankyStuffLibrary.csproj": {
+              "projectPath": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharpBasics101\\BankyStuffLibrary\\BankyStuffLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

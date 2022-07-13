@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4OhRb9kC8d+IHWu38zF84cBYycJhojFdq7voEme+kLvNZTVbSXeyRGtw9dTxDdIcHOzBqRDaLcXblNbVg9iUcA==",
+  "dgSpecHash": "Pe++Le85IWuolNSaiXRw0JYi4dj/7HZX+Hsuje5/3qj+MHF+PEBjLADSdtWF+P4b26UluuudynEV2wZsEu3KyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharp_Basics_101\\CSharp_Basics_101\\CSharp_Basics_101.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Afonso Pinto\\Desktop\\Projeto\\CSharpBasics101\\CSharp_Basics_101\\CSharp_Basics_101.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Afonso Pinto\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512"
+  ],
   "logs": []
 }

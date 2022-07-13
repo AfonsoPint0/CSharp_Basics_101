@@ -1,4 +1,4 @@
-﻿using CSharp_Basics_101;
+﻿using BankyStuffLibrary;
 
 var account = new BankAccount("Kendra", 1000);
 Console.WriteLine($"Account: {account.Number} was created for {account.Owner} with {account.Balance}.");
@@ -13,14 +13,14 @@ Console.WriteLine(account.getAccountHistory());
 
 
 // Test that the initial balances must be positive
-try
-{
-    account.MakeDeposit(300, DateTime.Now, "stealing");
-}
-catch (ArgumentOutOfRangeException e)
-{
-    Console.WriteLine("Exception caught, creating account with negative balance");
-    Console.WriteLine(e.ToString());
-}
+//try
+//{
+//    account.MakeDeposit(300, DateTime.Now, "stealing");
+//}
+//catch (ArgumentOutOfRangeException e)
+//{
+//    Console.WriteLine("Exception caught, creating account with negative balance");
+//    Console.WriteLine(e.ToString());
+//}
 
 

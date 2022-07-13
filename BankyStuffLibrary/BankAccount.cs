@@ -1,8 +1,8 @@
 ﻿using System.Text;
 
-namespace CSharp_Basics_101
+namespace BankyStuffLibrary
 {
-    internal class BankAccount
+    public class BankAccount
     {
         public string Number { get; }
         public string Owner { get; set; }
@@ -66,7 +66,7 @@ namespace CSharp_Basics_101
             // rows
             foreach (var item in allTransactions)
             {
-                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.AmountForHumans}\t{item.Notes}");
             }
             return report.ToString();
         }
